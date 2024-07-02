@@ -1,0 +1,178 @@
+@font-face {
+    font-family: "Cursive";
+    src: url(../font/Recursive_Monospace-SemiBold.ttf);
+}
+img{
+    width: 100%;
+}
+*{
+    box-sizing: border-box;
+ 
+}
+::-webkit-scrollbar {
+    width: 12px;
+   
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #32383E;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #262A2F; 
+    border-radius: 10px;
+  }
+h1{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+.logo{
+    width: 3em;
+}
+body{
+    margin: 0%;
+    font-family: "Cursive";
+    background-color: #272B30;
+}
+.background{
+    height: 25vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ;
+    position: relative;
+   
+}
+.background img{
+    object-fit: cover;
+}
+nav{
+    top: 20px;
+    z-index: 111111111111;
+}
+.nav-list{
+  
+    background-color: #3A497B;
+    box-shadow: 1px 1px 24px 9px rgb(40, 40, 40);
+    transform: translateY(-50%);
+   
+}
+.nav-list a{
+    color: white;
+    transition: 0.7s;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.nav-list a:hover{
+    color: #09c !important;
+}
+.card-games{
+    
+    min-height: 100vh;
+    background-color: #272B30;
+   position: relative;
+   
+}
+.card{
+    background-color: #272B2F;
+    color: white;
+    opacity: 0.5;
+    transition: 0.5s;
+    cursor: pointer;
+    height: 100%;
+    position: relative;
+   
+}
+.card:hover{
+    opacity: 1;
+    transform: scale(1.05);
+}
+.header span{
+    background-color: #0D6EFD;
+}
+.card p{
+    color: #ffffffaf;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+.img-footer{
+    background-color: rgb(33 37 41 / 3%);
+ border-bottom: solid 0.5px rgb(0 0 0 / 18%);
+ border-top: solid 0.2px rgb(0 0 0 / 18%);
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 11px;
+    
+}
+.img-footer span{
+    padding:  5px 10px;
+    background-color: #32383E;
+}
+
+.color{
+    color: #09c !important;
+}
+
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border-left: 4px solid #FF3D00;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+  }
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+  .load{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ;
+    height: 100vh;
+    z-index: 1111111111111111111111111111111111111;
+    margin: 0%;
+  }
+  .details-main{
+    background-color: #27282B;
+    min-height: 100vh;
+  }
+.details-main .text{
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 21px;
+}
+.details-main span{
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 14px;
+    padding: 3px 10px;
+    background-color: #0DCAF0;
+    color: black;
+}
+@media  (max-width: 768px){
+    .nav-list{
+  
+        background-color: #3A497B;
+        box-shadow: 1px 1px 24px 9px rgb(40, 40, 40);
+        transform: translateY(0);
+       
+    }
+}
